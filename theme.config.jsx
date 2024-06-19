@@ -12,7 +12,7 @@ export default {
       )
     },
     project: {
-      link: 'https://github.com/taqui-786'
+      link: 'https://github.com/taqui-786/mixui'
     },
     footer: {
       text: (
@@ -32,7 +32,7 @@ export default {
     },
   
     feedback: {
-      useLink: () => 'https://google.com'
+      useLink: () => 'https://github.com/taqui-786/mixui/issues/new'
     },
    
    
