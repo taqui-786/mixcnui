@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <header className="bg-white w-full">
       <div className="mx-auto flex h-16  items-center gap-8 px-4 sm:px-6 lg:px-8">
-        <Link className="flex text-primary  " href="#">
+        <Link className="flex text-primary  " href="/">
           {/* <Image src={logo} alt='mylogo'  priority loading='eager' className='h-10 w-auto' /> */}
           <span className="text-3xl font-bold font-mono">Mixcn-Ui</span>
         </Link>
