@@ -10,13 +10,13 @@ function HeroSeciton() {
         href={"https://github.com/taqui-786/mixui"}
         className="w-fit border rounded-full text-sm mb-5 px-2 py-1 font-semibold animate-pulse border-black"
       >
-        👋 | Star it on Github &rarr;
+        ⭐ | Star it on Github &rarr;
       </Link>
       <h1 className="text-3xl font-bold tracking-tight text-card-foreground sm:text-5xl">
-        Install components in seconds with `npx mixui add
+        Install components in seconds with `npx mixui add 
         <span className="text-primary ml-2 inline-flex  flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] sm:h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] overflow-hidden">
           <WordRotate
-            className=" text-3xl sm:text-5xl  font-bold text-primary block sm:min-w-56 text-start "
+            className=" text-3xl sm:text-5xl  font-bold text-primary block sm:min-w-56 text-start  "
             words={[
               "<name>`",
               "hackerbutton`",

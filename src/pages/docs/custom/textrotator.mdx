@@ -1,0 +1,75 @@
+---
+title: Text Rotator
+---
+# Text Rotator
+
+Text Rotator with tailwindcss.
+
+
+import Badge from "../../../components/mdx/Badge"
+
+<div className="flex py-6 flex-row gap-3">
+<Badge label="Nextjs" />
+<Badge label="Typescript" />
+<Badge label="Tailwindcss" />
+</div>
+
+
+
+import TextRotator from "../../../components/mdx/TextRotator"
+import {PreviewWithCode, Preview} from "@/components/PreviewWithCode"
+
+
+<PreviewWithCode>
+<Preview className="bg-gray-50">
+<TextRotator/>
+</Preview >
+<Preview toPreview="code" >
+```sh copy
+import TextRotator from "@/components/mixcnui/TextRotator";
+```
+
+```sh copy
+<TextRotator />
+```
+ Go inside the <bold className="font-semibold text-black">TextRotator.tsx</bold> and edit all the <bold className="font-semibold text-black">li elements</bold> accourding to you.
+</Preview >
+</PreviewWithCode>
+
+
+## Installation
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import ManuallInstallButton from "../../../components/mdx/ManuallInstallButton"
+
+<Tabs defaultValue="cli" className="w-full  mt-5">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+  ```sh copy
+npx mixcn-ui add textrotator
+```
+1. The command will create a `components/mixui/TextRotator.tsx` in your Nextjs App directory.
+2. It will install the neccessary package required for this component.
+
+</TabsContent>
+  <TabsContent value="manual">
+  
+
+If you are facing any problem while installation with CLI command try installing Manually. 
+<ManuallInstallButton href="https://github.com/taqui-786/mixui/blob/main/src/components/mdx/TextRotator.tsx"/>
+  </TabsContent>
+</Tabs>
+
+## usage
+
+```sh copy
+import TextRotator from "@/components/mixcnui/TextRotator";
+```
+
+```sh copy
+<TextRotator />
+```
+ Go inside the <bold className="font-semibold text-black">TextRotator.tsx</bold> and edit all the <bold className="font-semibold text-black">li elements</bold> accourding to you.

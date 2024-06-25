@@ -1,0 +1,81 @@
+---
+title: Hacker Button
+---
+# Hacker Button
+
+Randomize text on click with vue with tailwindcss.
+
+
+import Badge from "../../../components/mdx/Badge"
+
+<div className="flex py-6 flex-row gap-3">
+<Badge label="Nextjs" />
+<Badge label="Typescript" />
+<Badge label="Tailwindcss" />
+</div>
+
+
+
+import HackerButton from "../../../components/mdx/HackerButton"
+import {PreviewWithCode, Preview} from "@/components/PreviewWithCode"
+
+
+<PreviewWithCode>
+<Preview className="bg-gray-50" >
+<HackerButton label="Download Resume"/>
+</Preview>
+<Preview toPreview="code">
+```sh copy
+import HackerButton from '@/components/mixcnui/HackerButton'
+```
+
+```sh copy
+<div>
+<HackerButton label="Download Resume"/>
+</div>
+```
+</Preview>
+</PreviewWithCode>
+
+<p className="w-full text-center">Hover on the button to preview the effect.</p> 
+
+## Installation
+
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import ManuallInstallButton from "../../../components/mdx/ManuallInstallButton"
+
+<Tabs defaultValue="cli" className="w-full mt-5">
+  <TabsList>
+    <TabsTrigger value="cli">CLI</TabsTrigger>
+    <TabsTrigger value="manual">Manual</TabsTrigger>
+  </TabsList>
+  <TabsContent value="cli">
+  ```sh copy
+npx mixcn-ui add hackerbutton
+```
+1. The command will create a `components/mixcnui/HackerButton.tsx` in your Nextjs App directory.
+2. It will install the neccessary package required for this component.
+
+</TabsContent>
+  <TabsContent value="manual">
+  
+
+If you are facing any problem while installation with CLI command try installing Manually. 
+<ManuallInstallButton href="https://github.com/taqui-786/mixui/blob/main/src/components/mdx/HackerButton.tsx"/>
+  </TabsContent>
+</Tabs>
+
+
+
+
+## usage
+```sh copy
+import HackerButton from '@/components/mixcnui/HackerButton'
+```
+
+```sh copy
+<div>
+<HackerButton label="Download Resume"/>
+</div>
+```
+
