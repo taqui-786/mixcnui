@@ -21,7 +21,7 @@ function HeroSeciton() {
               "<name>`",
               "hackerbutton`",
               "textrotator`",
-              "crousal`",
+              "carousel`",
               "form`",
             ]}
           />
