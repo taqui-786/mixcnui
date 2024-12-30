@@ -2,10 +2,13 @@ import Link from "next/link";
 import React from "react";
 import { buttonVariants } from "./ui/button";
 import WordRotate from "./animation/WordRotator";
+import TextRotator from "./mdx/TextRotator";
+import { CarouselExample } from "./extension/CarouselPreview";
+import HackerButton from "./mdx/HackerButton";
 
 function HeroSeciton() {
   return (
-    <div className="px-2 sm:px-0 py-20 mx-auto text-center flex flex-col items-center max-w-[52rem] z-50 overflow-y-hidden ">
+    <div className="px-2 sm:px-0 py-20 mx-auto text-center flex flex-col items-center z-50 overflow-y-hidden ">
       <Link
         href={"https://github.com/taqui-786/mixui"}
         className="w-fit border rounded-full text-sm mb-5 px-2 py-1 font-semibold animate-pulse border-black"
@@ -13,7 +16,7 @@ function HeroSeciton() {
         ⭐ | Star it on Github &rarr;
       </Link>
       <h1 className="text-3xl font-bold tracking-tight text-card-foreground sm:text-5xl">
-        Install components in seconds with `npx mixui add 
+        Install components in seconds with <br/ > `npx mixui add 
         <span className="text-primary ml-2 inline-flex  flex-col h-[calc(theme(fontSize.3xl)*theme(lineHeight.tight))] sm:h-[calc(theme(fontSize.5xl)*theme(lineHeight.tight))] overflow-hidden">
           <WordRotate
             className=" text-3xl sm:text-5xl  font-bold text-primary block sm:min-w-56 text-start  "
@@ -21,7 +24,7 @@ function HeroSeciton() {
               "<name>`",
               "hackerbutton`",
               "textrotator`",
-              "crousal`",
+              "carousel`",
               "form`",
             ]}
           />
@@ -93,6 +96,35 @@ function HeroSeciton() {
             <path d="M20 12l-8 8l-4 -4"></path>
           </svg>
         </button>
+      </div>
+      <div className="mt-10 mx-auto">
+        <h2 className="mb-2 text-center text-5xl font-bold leading-[1.2] tracking-tighter text-foreground">Component Demos</h2>
+        <h3 className="mx-auto mb-8 text-balance text-center text-lg font-medium tracking-tight text-foreground/80">Here are some of the components that you can use to build your landing pages.</h3>
+
+        <div className="mx-auto w-full flex flex-col max-w-screen-xl">
+        <div className="flex w-full justify-center flex-wrap overflow-x-hidden gap-5">
+        <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+          <div className=" h-56 w-[500px] flex justify-center items-center bg-gray-50">
+            <HackerButton label="Download Resume" />
+          </div>
+          
+        </div>
+      
+        
+        <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+          <div className=" h-64 w-[500px] flex justify-center items-center bg-gray-50">
+            <CarouselExample />
+          </div>
+          
+      </div>
+      <div className="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-neutral-700/70">
+          <div className=" h-56 w-[500px] flex justify-center items-center bg-gray-50">
+            <TextRotator />
+          </div>
+      </div>
+    
+      </div>          
+        </div>
       </div>
     </div>
   );
