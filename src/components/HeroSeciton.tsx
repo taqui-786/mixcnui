@@ -36,7 +36,7 @@ function HeroSeciton() {
       </p>
       <div className="flex flex-col sm:flex-row gap-4 mt-10">
         <Link href="/components" className={buttonVariants()}>
-          Browse Component&#39;s
+          Browse Components
         </Link>
         <Link href="/docs" className={buttonVariants({ variant: "ghost" })}>
           Documentation&rarr;
