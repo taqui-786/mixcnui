@@ -1,8 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mixcn-UI
 
-## Getting Started
+![Mixcn-UI Banner](public/banner.jpeg)
 
-First, run the development server:
+A perfect composition of beautiful components and powerful animations. Mixcn-UI is a modern, responsive UI component library built with React and TypeScript.
+
+## 🚀 Features
+
+- 🎨 Beautiful, modern component designs
+- ⚡ Highly performant and lightweight
+- 📱 Fully responsive components
+- 🎭 Powerful animation system
+- 🔧 Easy to customize
+- 📦 Tree-shakeable
+- 🎯 TypeScript support
+
+## 🛠️ Tech Stack
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
+
+## 🚀 Getting Started
+
+First, install the package:
+
+```bash
+npm install mixcn-ui
+# or
+yarn add mixcn-ui
+# or
+pnpm add mixcn-ui
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +42,72 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📚 Documentation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Visit our [documentation](https://mixcn-ui.com/docs) to learn more about:
+- Component API
+- Theming
+- Animations
+- Best practices
+- Examples
 
-## Learn More
+## 🤝 Contributing
 
-To learn more about Next.js, take a look at the following resources:
+We love your input! We want to make contributing to Mixcn-UI as easy and transparent as possible. Here's how you can contribute:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Fork the repo
+   ```bash
+   https://github.com/shadcn/mixcn-ui.git
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Clone your fork
+   ```bash
+   git clone https://github.com/your-username/mixcn-ui.git
+   ```
 
-## Deploy on Vercel
+3. Create your feature branch
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Make your changes and commit
+   ```bash
+   git commit -m 'Add some AmazingFeature'
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Push to the branch
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+
+6. Open a Pull Request
+
+### Development Guidelines
+
+- Follow the existing code style
+- Write meaningful commit messages
+- Add tests for new features
+- Update documentation as needed
+- Ensure all tests pass before submitting PR
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 💖 Credits
+
+Built with love by [Md Taqui Imam](https://github.com/mdtaquiimam)
+
+## 🤝 Support
+
+- Star this repository
+- Follow us on [Twitter](https://twitter.com/mixcn_ui)
+- Join our [Discord community](https://discord.gg/mixcn-ui)
+
+---
+
+<p align="center">Made with ❤️ by the Mixcn-UI team</p>

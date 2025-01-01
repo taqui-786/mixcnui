@@ -48,8 +48,7 @@ const useCarousel = () => {
 
 const CarouselContext = createContext<CarouselContextType | null>(null);
 
-// TODO : add support for vertical rtl support for the carousel
-// ref : https://github.com/davidjerleke/embla-carousel/issues/784
+
 
 const Carousel = forwardRef<
   HTMLDivElement,

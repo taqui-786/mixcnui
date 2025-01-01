@@ -7,7 +7,7 @@ import {
     CarouselThumbsContainer,
     SliderMainItem,
     SliderThumbItem,
-  } from "@/components/mdx/Carousel";
+  } from "@/components/uiComponents/MultiCarousel";
   import AutoScroll from "embla-carousel-auto-scroll";
   
   export const CarouselExample = () => {
