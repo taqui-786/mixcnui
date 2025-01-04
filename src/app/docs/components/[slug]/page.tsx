@@ -3,11 +3,12 @@
 import React, { useState, useEffect } from 'react';
 import { components } from '../../registry/components';
 import { CodeBlock } from '../../docsComponents/CodeBlock';
-import { notFound } from 'next/navigation';
+import { notFound, useParams } from 'next/navigation';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
 
-export default function ComponentPage({ params }: { params: { slug: string } }) {
-  const component = components[params.slug];
+export default function ComponentPage() {
+  const params = useParams();
+  const component = components[params.slug as keyof typeof components];
   const [showUsageCode, setShowUsageCode] = useState(false);
   const [sourceCode, setSourceCode] = useState<string>('Loading...');
 
