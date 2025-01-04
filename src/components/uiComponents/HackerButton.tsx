@@ -57,7 +57,7 @@ const HackerButton: React.FC<HackerButtonProps> = ({
     <button
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
-      className={`px-4 py-2 bg-primary hover:bg-primary/90 text-white rounded-md transition-colors ${className}`}
+      className={`px-4 py-2 bg-primary hover:bg-primary/90 dark:text-black text-white rounded-md transition-colors ${className}`}
     >
       <span className="font-mono">{displayText}</span>
     </button>
