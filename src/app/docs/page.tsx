@@ -34,7 +34,7 @@ export default function DocsPage() {
               use them.
             </p>
             <Link
-              href="/components"
+              href="/docs/components"
               className="inline-flex items-center text-blue-600 dark:text-blue-400 hover:underline"
             >
               View components <ArrowRight className="ml-2 h-4 w-4" />
