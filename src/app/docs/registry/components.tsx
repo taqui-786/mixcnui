@@ -12,7 +12,7 @@ import {
   CarouselNext,
   useCarousel,
 } from "@/components/uiComponents/MultiCarousel";
-import AutoScroll from 'embla-carousel-auto-scroll';
+import AutoScroll from "embla-carousel-auto-scroll";
 
 export type ComponentType = {
   name: string;
@@ -113,7 +113,8 @@ export const components: Record<string, ComponentType> = {
       </Carousel>
     ),
     installName: "multicarousel",
-    description: "A carousel component that supports all embla carousel features.",
+    description:
+      "A carousel component that supports all embla carousel features.",
     sourcePath: "uiComponents/MultiCarousel.tsx",
     code: `import {
   Carousel,
@@ -167,7 +168,7 @@ export default function Example() {
         default: "horizontal",
         description: "The orientation of the carousel",
         required: false,
-      }
+      },
     ],
     examples: [
       {
@@ -231,7 +232,7 @@ export default function Example() {
       </div>
     </Carousel>
   );
-}`
+}`,
       },
       {
         name: "With Auto-scroll Plugin",
@@ -244,12 +245,12 @@ export default function Example() {
                 stopOnMouseEnter: true,
                 speed: 1,
                 // delay: 0
-              })
+              }),
             ]}
             carouselOptions={{
               loop: true,
-              align: 'start',
-              containScroll: 'trimSnaps'
+              align: "start",
+              containScroll: "trimSnaps",
             }}
           >
             <CarouselMainContainer className="h-60">
@@ -299,7 +300,7 @@ export default function Example() {
       </CarouselMainContainer>
     </Carousel>
   );
-}`
+}`,
       },
       {
         name: "Orientation",
@@ -318,7 +319,11 @@ export default function Example() {
             </CarouselMainContainer>
             <CarouselThumbsContainer>
               {Array.from({ length: 5 }).map((_, index) => (
-                <SliderThumbItem key={index} index={index} className="bg-transparent">
+                <SliderThumbItem
+                  key={index}
+                  index={index}
+                  className="bg-transparent"
+                >
                   <div className="outline outline-1 outline-border size-full flex items-center justify-center rounded-xl bg-background">
                     Slide {index + 1}
                   </div>
@@ -362,10 +367,10 @@ export default function Example() {
       </CarouselThumbsContainer>
     </Carousel>
   );
-}`
-      }
-    ]
-  }
+}`,
+      },
+    ],
+  },
 };
 
 async function fetchComponentSource(path: string): Promise<string> {
