@@ -1,31 +1,15 @@
 "use client";
-import { Github, Moon, Sun, Twitter } from "lucide-react";
-import Image from "next/image";
+import { Github, Moon, Sun } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import logo from "../../../public/mixuiLogo.png";
 import { usePathname } from "next/navigation";
+import { useTheme } from "@/lib/hooks/useTheme";
 
 function Navbar() {
   const pathname = usePathname();
   const isDocsPage = pathname?.includes("docs");
 
-  const [theme, setTheme] = useState("light"); // Default to 'light'
-
-  useEffect(() => {
-    // Load theme from localStorage
-    const savedTheme = localStorage.getItem("theme") || "light";
-    setTheme(savedTheme);
-    document.documentElement.classList.add(savedTheme);
-  }, []);
-
-  const toggleTheme = () => {
-    const newTheme = theme === "light" ? "dark" : "light";
-    setTheme(newTheme);
-    document.documentElement.classList.remove(theme);
-    document.documentElement.classList.add(newTheme);
-    localStorage.setItem("theme", newTheme);
-  };
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <header className="bg-white dark:bg-[#020817] w-full border-b">
@@ -88,7 +72,7 @@ function Navbar() {
                 href="https://github.com/taqui-786/mixui"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-4 py-2 rounded-lg 
+                className="flex items-center gap-2 px-4 py-2 rounded-lg
                   transition-all duration-200 ease-in-out
                   dark:hover:bg-gray-500
                   hover:bg-gray-100 hover:scale-[1.02]
