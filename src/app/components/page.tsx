@@ -87,10 +87,10 @@ function ComponentsPage() {
         {filteredComponents.map((component, index) => (
           <div
             key={index}
-            className="group flex flex-col bg-card border rounded-xl shadow-sm hover:shadow-md transition-all duration-200 overflow-hidden"
+            className="group flex flex-col bg-card border rounded-xl shadow-sm hover:shadow-md transition-all duration-200 justify-between items-start gap-y-8 w-full"
           >
             {/* Preview Section - Updated */}
-            <div className="relative min-h-[200px] md:min-h-[250px] w-full bg-muted border-b">
+            <div className="relative p-8 md:p-4 w-full bg-muted border-b h-full min-h-[10rem]">
               <div className="absolute inset-0 flex justify-center items-center p-6 overflow-hidden">
                 <div className="transform-gpu transition-transform duration-300 group-hover:scale-105 w-full flex justify-center items-center">
                   <div className="max-w-full max-h-full overflow-auto flex justify-center items-center">
@@ -104,7 +104,7 @@ function ComponentsPage() {
             </div>
 
             {/* Content Section - Updated */}
-            <div className="p-5 flex flex-col flex-grow">
+            <div className="p-5 flex flex-col flex-grow w-full">
               <h3 className="text-xl font-semibold text-foreground mb-2">
                 {component.title}
               </h3>
