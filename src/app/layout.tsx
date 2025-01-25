@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}><main
           className={cn(
-            "flex flex-col relative w-screen break-words h-full min-h-dvh"
+            "flex flex-col relative w-full break-words h-full min-h-dvh max-w-full"
           )}
         >
           {/* NAVBAR ->  */}
